@@ -85,6 +85,8 @@ if(require.main == module) {
     	rest.get(program.url).on('complete', function(result) {
 	    var checkjson = checkURL(result, program.checks);
 	    var outJson = JSON.stringify(checkJson, null, 4);
+	    console.log(outJson);
+	});    
     }	
 } else {
     exports.checkHtmlFile = checkHtmlFile;
